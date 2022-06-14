@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FoodFXMLController">
+   <left>
+      <VBox prefHeight="500.0" prefWidth="187.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="98.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/image.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Label fx:id="lbPageLabel" alignment="CENTER" prefHeight="27.0" prefWidth="211.0" text="Guest's Acc" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" prefHeight="44.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="132.0" text="Home" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="100.0">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#btnGenerateBill" prefHeight="25.0" prefWidth="132.0" text="Genearate Bill" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="45.0" prefWidth="100.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="133.0" text="Pay Bills" />
+               </children>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="439.0" prefWidth="173.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="50.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#switchToScene2" prefHeight="25.0" prefWidth="82.0" text="Log-in" />
+                     </children>
+                  </VBox>
+                  <Button mnemonicParsing="false" onAction="#btnLogOutClicked" prefHeight="25.0" prefWidth="80.0" text="Log-Out" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="500.0" prefWidth="525.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="488.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="BOTTOM_CENTER" prefHeight="70.0" prefWidth="198.0" text="Welcome to udo" textFill="#e8d655">
+                                 <font>
+                                    <Font name="Berlin Sans FB" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="TOP_CENTER" prefHeight="27.0" prefWidth="200.0" text="Food Odering APP" textFill="#3c80da">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="349.0">
+                     <children>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="314.0">
+                           <children>
+                              <TextField prefHeight="31.0" prefWidth="314.0" promptText="Enter an Item to Search...." />
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="12.0">
+                           <children>
+                              <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/search.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="76.0" prefWidth="562.0" />
+            <HBox alignment="CENTER" prefHeight="402.0" prefWidth="708.0">
+               <children>
+                  <VBox prefHeight="413.0" prefWidth="545.0">
+                     <children>
+                        <HBox prefHeight="161.0" prefWidth="545.0">
+                           <children>
+                              <VBox prefHeight="238.0" prefWidth="137.0">
+                                 <children>
+                                    <ImageView fitHeight="91.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/pizza.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="67.0" prefWidth="137.0">
+                                       <children>
+                                          <Label prefHeight="36.0" prefWidth="137.0" text="Price: 20,000 Tsh">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#btnPizzaClicked" prefHeight="37.0" prefWidth="137.0" text="Order Item" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="290.0" prefWidth="140.0">
+                                 <children>
+                                    <ImageView fitHeight="103.0" fitWidth="137.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/pilau2.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="69.0" prefWidth="137.0">
+                                       <children>
+                                          <Label prefHeight="31.0" prefWidth="141.0" text="Price: 5,000 Tsh">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#btnPilauClicked" prefHeight="35.0" prefWidth="137.0" text="Order Item" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="290.0" prefWidth="140.0">
+                                 <children>
+                                    <ImageView fitHeight="93.0" fitWidth="134.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/chicken.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="71.0" prefWidth="136.0">
+                                       <children>
+                                          <Label prefHeight="34.0" prefWidth="140.0" text="Price: 15,000 Tsh">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#btnChickenClicked" prefHeight="35.0" prefWidth="135.0" text=" Order Item" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="290.0" prefWidth="140.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/burger.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <VBox prefHeight="71.0" prefWidth="136.0">
+                                       <children>
+                                          <Label prefHeight="34.0" prefWidth="141.0" text="Price: 7,000 Tsh ">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Button mnemonicParsing="false" onAction="#btnBurgerClicked" prefHeight="34.0" prefWidth="142.0" text="Order Item" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="154.0" prefWidth="545.0">
+                           <children>
+                              <VBox prefHeight="154.0" prefWidth="143.0">
+                                 <children>
+                                    <ImageView fitHeight="90.0" fitWidth="141.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/fish.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="35.0" prefWidth="138.0" text="Price: 10, 000 Tsh">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#btnFishClicked" prefHeight="30.0" prefWidth="141.0" text="Order Item" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="137.0">
+                                 <children>
+                                    <ImageView fitHeight="90.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/octopus.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="36.0" prefWidth="135.0" text="Price: 8,000 Tsh">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#btnOctopusClicked" prefHeight="33.0" prefWidth="135.0" text="Order Item" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="137.0">
+                                 <children>
+                                    <ImageView fitHeight="90.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/matoke.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="36.0" prefWidth="136.0" text="Price: 12,000 Tsh">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#btnBananaClicked" prefHeight="32.0" prefWidth="136.0" text="Order Item" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="200.0" prefWidth="137.0">
+                                 <children>
+                                    <ImageView fitHeight="90.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@Images/rice.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label prefHeight="35.0" prefWidth="136.0" text="Price: 1,000 Tsh">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Button mnemonicParsing="false" onAction="#btnWaliBeanCicked" prefHeight="33.0" prefWidth="136.0" text="Order Item" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="62.0" prefWidth="545.0">
+                           <children>
+                              <Label id="lbDisplayText" fx:id="lbDisplayText" alignment="CENTER" prefHeight="62.0" prefWidth="546.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="500.0" prefWidth="59.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="253.0" prefWidth="235.0" />
+            <VBox prefHeight="348.0" prefWidth="255.0" />
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="524.0" />
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="460.0">
+               <children>
+                  <Label fx:id="lbBill" alignment="CENTER" prefHeight="39.0" prefWidth="346.0" />
+               </children>
+            </HBox>
+         </children></HBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
